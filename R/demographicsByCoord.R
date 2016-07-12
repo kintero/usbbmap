@@ -20,7 +20,7 @@ demographicsByCoord<-function(lat=NULL, lon=NULL, year=2014){
   if (is.nan(lat) || is.nan(lon) || is.nan(year))
     stop("The parameters lat, lon and year can not be NAN")
 
-  url<-paste0("http://www.broadbandmap.gov/broadbandmap/demographic/", year, "/coordinates?latitude=", lat, "&longitude=",long,"&format=json")
+  url<-paste0("http://www.broadbandmap.gov/broadbandmap/demographic/", year, "/coordinates?latitude=", lat, "&longitude=",lon,"&format=json")
   document <- fromJSON(txt=url)
   df<-as.data.frame(document$Results)
   return(df)

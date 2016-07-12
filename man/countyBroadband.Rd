@@ -2,9 +2,9 @@
 % Please edit documentation in R/countyBroadband.R
 \name{countyBroadband}
 \alias{countyBroadband}
-\title{Search by county name for list of counties with response having a flag for fixed broadband availability greater than 50 percent for each county.}
+\title{Search broadband availability by county name.}
 \usage{
-countyBroadband(county = NULL, date = "jun2014")
+countyBroadband(version = "jun2014", county = NULL)
 }
 \arguments{
 \item{county}{A character with a minimum of 1 character.}
@@ -12,10 +12,10 @@ countyBroadband(county = NULL, date = "jun2014")
 \item{date}{A character with data version. Examples: jun2014, dec2013, jun2013, dec2012, jun2012, dec2011}
 }
 \value{
-stateName countyName availabilityGt50PercentFlag countyId stateId
+A data.frame with these variables: stateName countyName availabilityGt50PercentFlag countyId stateId
 }
 \description{
-Search by county name for list of counties with response having a flag for fixed broadband availability greater than 50 percent for each county.
+The api allows you to search by county name for list of counties with response having a flag for fixed broadband availability greater than 50% for each county.
 }
 \examples{
 countyBroadband(county="Miami")

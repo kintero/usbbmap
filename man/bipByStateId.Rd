@@ -7,13 +7,13 @@
 bipByStateId(stateId = NULL)
 }
 \arguments{
-\item{stateId}{A character or vector of characters.}
+\item{stateId}{A character or vector of characters with FIPS State Numeric Code. http://www.census.gov/geo/reference/ansi_statetables.html}
 }
 \value{
-The sum of \code{x} and \code{y}.
+A dataframe with following information: http://www.broadbandmap.gov/broadbandmap/api/dictionary/v1/bip?format=json.
 }
 \description{
-Get BIP (Broadband Initiatives Program) by State Ids.
+This function allows the user to find the BIP funding allocated to states by specifying the state fips code.
 }
 \examples{
 bipByStateId(c("12","18","21"))

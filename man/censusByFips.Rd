@@ -9,13 +9,13 @@ censusByFips(geography = "state", geographyId = "01")
 \arguments{
 \item{geography}{A character with geography type. It can be state, county, tract, block, congdistrict, statehouse, statesenate, censusplace, msa, tribal, usf.}
 
-\item{geographyId}{A character or vector of character with the corresponding geographical ID.}
+\item{geographyId}{A character or vector of character with the corresponding geographical ID. More information:}
 }
 \value{
 A dataframe with following information: http://www.broadbandmap.gov/broadbandmap/api/dictionary/v1/census?format=json
 }
 \description{
-It finds the geography of a specified geography type by geography id within the entire United States.
+This API finds the geography of a specified geography type by geography id within the entire United States. Latest data version released jun2014. Previous data versions include jun2011, dec2011, jun2012, dec2012, jun2013, dec2013.
 }
 \examples{
 censusByFips(geography="state", geographyId="12")

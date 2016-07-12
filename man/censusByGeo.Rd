@@ -2,7 +2,7 @@
 % Please edit documentation in R/censusByGeo.R
 \name{censusByGeo}
 \alias{censusByGeo}
-\title{This function finds all the geographies specified by a geography name.}
+\title{This function finds all the geographies specified by geography name.}
 \usage{
 censusByGeo(geography = NULL, name = NULL, maxresults = 5)
 }

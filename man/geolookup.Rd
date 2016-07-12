@@ -2,7 +2,7 @@
 % Please edit documentation in R/geolookup.R
 \name{geolookup}
 \alias{geolookup}
-\title{Get information about .}
+\title{Find all geographies of a specified geography type..}
 \usage{
 geolookup(geography = "state", maxresults = 100)
 }
@@ -15,7 +15,7 @@ geolookup(geography = "state", maxresults = 100)
 If \code{stateName="nation"} returns national bip
 }
 \description{
-Get information about .
+This function allows users to find all geographies of a specified geography type.
 }
 \examples{
 geolookup(geography = "state")

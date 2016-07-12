@@ -2,24 +2,24 @@
 % Please edit documentation in R/censusByCoord.R
 \name{censusByCoord}
 \alias{censusByCoord}
-\title{Get census information from coordinates.}
+\title{Get census information by coordinates.}
 \usage{
-censusByCoord(lat = NULL, long = NULL, geographyType = NULL)
+censusByCoord(lat = NULL, lon = NULL, geographyType = NULL)
 }
 \arguments{
 \item{lat}{A numeric value, latitude}
 
-\item{long}{A numeric value, longitude}
+\item{lon}{A numeric value, longitude}
 
-\item{geographyType}{A character. Type of geography.}
+\item{geographyType}{A character. Valid geography types: state, county, tract, block, congdistrict, statehouse, statesenate, censusplace, msa.}
 }
 \value{
-specific information about census.
+A dataframe with following information: http://www.broadbandmap.gov/broadbandmap/api/dictionary/v1/census?format=json
 }
 \description{
-Get census information from coordinates.
+This function returns the US Census Block geography ID information given a passed Latitude and Longitude. Latest data version released jun2014. Previous data versions include jun2011, dec2011, jun2012, dec2012, jun2013, dec2013.
 }
 \examples{
-censusByCoord(lat=25.7766074, long = -80.3714869, geographyType="block")
+censusByCoord(lat=25.7766074, lon = -80.3714869, geographyType="block")
 }
 

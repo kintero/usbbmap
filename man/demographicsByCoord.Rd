@@ -2,24 +2,24 @@
 % Please edit documentation in R/demographicsByCoord.R
 \name{demographicsByCoord}
 \alias{demographicsByCoord}
-\title{Get demographics information from coordinates.}
+\title{Get demographics information by coordinates.}
 \usage{
-demographicsByCoord(lat = NULL, long = NULL, year = 2014)
+demographicsByCoord(lat = NULL, lon = NULL, year = 2014)
 }
 \arguments{
 \item{lat}{A numeric value, latitude}
 
-\item{long}{A numeric value, longitude}
+\item{lon}{A numeric value, longitude}
 
-\item{year}{A numeric value with 4 digits. Year of data. By the default 2014. The years available are 2014, 2013, 2012, 2011.}
+\item{year}{A numeric value with 4 digits. Year of data. By the default 2014. The available years are 2014, 2013, 2012, 2011.}
 }
 \value{
-blockFips, incomeBelowPoverty, medianIncome, incomeLessThan25, incomeBetween25to50, incomeBetween50to100, incomeBetween100to200, incomeGreater200, educationHighSchoolGraduate, educationBachelorOrGreater.
+A data.frame with these variables: blockFips, incomeBelowPoverty, medianIncome, incomeLessThan25, incomeBetween25to50, incomeBetween50to100, incomeBetween100to200, incomeGreater200, educationHighSchoolGraduate, educationBachelorOrGreater.
 }
 \description{
-Get demographics information from coordinates.
+Find the demographics data from the coordinates.
 }
 \examples{
-demographicsByCoord(lat=25.7766074, long = -80.3714869, year=2014)
+demographicsByCoord(lat=25.7766074, lon = -80.3714869, year=2014)
 }
 

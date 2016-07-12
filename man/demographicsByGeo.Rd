@@ -22,9 +22,6 @@ This function allows the user to search for the demographic information for a pa
 }
 \examples{
 demographicsByGeo(version = "jun2014", geography = "county",
-geographyId = c("01001", "01003", "01005",
-"01007", "01011", "010015",
-"01017", "01013", "01025",
-"01035", "01023"))
+geographyId = c("01001", "01003", "01005", "01007", "01011", "010015", "01017", "01013", "01025", "01035", "01023")
 }
 

@@ -4,17 +4,17 @@
 \alias{summaryBroadband}
 \title{This function returns broadband summary data by geography IDs for a specific geography type.}
 \usage{
-summaryBroadband(date = "jun2014", censusMetrics = NULL, geography = NULL,
-  geographyId = NULL)
+summaryBroadband(version = "jun2014", censusMetrics = NULL,
+  geography = NULL, geographyId = NULL)
 }
 \arguments{
-\item{date}{A character with data version. Examples: jun2014, dec2013, jun2013, dec2012, jun2012, dec2011.}
-
 \item{censusMetrics}{A character with census metric. It can be either \code{population} or \code{household}.}
 
 \item{geography}{A character with geography type. It can be state, censusplace, msa, county, statesenate, statehouse, congdistrict, usf, tribalnation or nation. If nation is choosen, it will return NATIONAL information.}
 
 \item{geographyId}{A character or vector of character with the corresponding geographical ID. If geographic is \code{nation}, this parameter will not be used.}
+
+\item{date}{A character with data version. Examples: jun2014, dec2013, jun2013, dec2012, jun2012, dec2011.}
 }
 \value{
 A dataframe with following information by geography: http://www.broadbandmap.gov/broadbandmap/api/dictionary/v1/broadbandsummary?format=json
