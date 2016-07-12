@@ -1,0 +1,13 @@
+Package: usbbmap
+Type: Package
+Title: Provide access to National Broadband Map API: http://
+    www.broadbandmap.gov/
+Version: 0.1.0
+Author: Karel López
+Maintainer: Who to complain to <yourfault@somewhere.net>
+Description: More about what it does (maybe more than one line)
+Depends:
+    jsonlite
+License: GPL-2
+LazyData: TRUE
+RoxygenNote: 5.0.1
