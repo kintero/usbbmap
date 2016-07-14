@@ -6,6 +6,7 @@
 #' @param location a character string or list specifying a location of interest.
 #' @return data.frame with variables lon and lat
 #' @seealso \url{http://wiki.openstreetmap.org/wiki/Nominatim}
+#' @export
 #' @examples
 #' osmGeocoder("4800 W. Copans Road, Coconut Creek, FL 33063")
 

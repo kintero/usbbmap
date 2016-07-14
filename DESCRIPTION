@@ -6,6 +6,7 @@ Version: 0.1.0
 Author: Karel López
 Maintainer: Karel López <krelopq@yahoo.es>
 Description: Provide access to National Broadband Map API: http://www.broadbandmap.gov/
+Imports: jsonlite
 Depends:
     jsonlite
 License: GPL-2
